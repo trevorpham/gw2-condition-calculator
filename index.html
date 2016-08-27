@@ -1,0 +1,104 @@
+<DOCTYPE !html>
+<html>
+<head>
+<title>Guild Wars 2 Condition Damage Calculator</title>
+<script src="http://code.jquery.com/jquery-latest.min.js"></script>
+<script src="calcs.js" type="text/javascript"></script>
+<link rel="stylesheet" type="text/css" href="gw2calc.css" />
+</head>
+
+<body>
+<div class="container">
+<h1>GW2 Condition Damage Calculator</h1>
+<h3>Updated for October 23, 2015 release</h3>
+<p>
+	<span>Level: <input type="number" class="Level" value="80"></span>
+	<span>Condition Damage: <input type="number" class="Cond"></span>
+	<span>Stacks: <input type="number" class="Stacks"></span>
+</p>
+<table>
+	<tr>
+		<td></td>
+		<td><b>Condition</b></td>
+		<td><b>Damage per Stack</b></td>
+		<td><b>Damage per Tick</b></td>
+		<td><b>Damage Modifier &#43;&#37;</b></td>
+	</tr>
+	<tr class="bleeding">
+		<td><a href="http://wiki.guildwars2.com/wiki/Bleeding"><img 
+		src="Bleeding_40px.png"></a></td>
+		<td>Bleeding</td>
+		<td class='stack'>0</td>
+		<td class='tick'>0</td>
+		<td><input type="number" class='modBleed'></td>
+	</tr>
+	<tr class="burning">
+		<td><a href="http://wiki.guildwars2.com/wiki/Burning"><img 
+		src="Burning_40px.png"></a></td>
+		<td>Burning</td>
+		<td class='stack'>0</td>
+		<td class='tick'>0</td>
+		<td><input type="number" class='modBurn'></td>
+	</tr>
+	<tr class="confusionDot">
+		<td><a href="http://wiki.guildwars2.com/wiki/Confusion"><img 
+		src="Confusion_40px.png"></a></td>
+		<td>Confusion<br><small>(DoT)</small></br></td>
+		<td class='stack'>0</td>
+		<td class='tick'>0</td>
+		<td><input type="number" class='modConfuse'></td>
+	</tr>
+	<tr class="confusionTrig">
+		<td>
+		<a href="http://wiki.guildwars2.com/wiki/Confusion"><img 
+		src="Confusion_40px.png"></a></td>
+		<td>Confusion<br><small>(trigger)</small></td>
+		<td class='stack'>0</td>
+		<td class='tick'>0</td>
+		<td></td>
+	</tr>
+	<tr class="tormentStand">
+		<td>
+		<a href="http://wiki.guildwars2.com/wiki/Torment"><img 
+		src="Torment_40px.png"></a></td>	
+		<td>Torment<br><small>(standing)</small></td>
+		<td class='stack'>0</td>
+		<td class='tick'>0</td>
+		<td><input type="number" class='modTorment'></td>
+	</tr>
+	<tr class="tormentMove">
+		<td><a href="http://wiki.guildwars2.com/wiki/Torment"><img 
+		src="Torment_40px.png"></a></td>		
+		<td>Torment<br><small>(moving)</small></td>
+		<td class='stack'>0</td>
+		<td class='tick'>0</td>
+		<td></td>
+	</tr>
+	<tr class="poison">
+		<td><a href="http://wiki.guildwars2.com/wiki/Poison"><img 
+		src="Poison_40px.png"></a></td>
+		<td>Poison</td>
+		<td class='stack'>0</td>
+		<td class='tick'>0</td>
+		<td><input type="number" class='modPoison'></td>
+	</tr>
+	<tr class="fear">
+		<td><a href="http://wiki.guildwars2.com/wiki/Terror"><img 
+		src="Fear_40px.png"></a></td>
+		<td>Fear<br><small>(Necromancer)</small></td>
+		<td class='stack'>0</td>
+		<td class='tick'>0</td>
+		<td><input type="number" class='modFear'></td>
+	</tr>
+	<tr class="chilled">
+		<td><a href="http://wiki.guildwars2.com/wiki/Deathly_Chill"><img 
+		src="Chilled_40px.png"></a></td>
+		<td>Chilled<br><small>(Necromancer)</small></td>
+		<td class='stack'>0</td>
+		<td class='tick'>0</td>
+		<td><input type="number" class='modChill'></td>
+	</tr>
+</table>
+</div>
+</body>
+</html>

@@ -1,0 +1,40 @@
+body {
+	background-color: #232323;
+	color: rgb(197,200,187);
+	margin: 50px 0 200px 0;
+}
+
+small {
+	color: #767676;
+}
+
+.container {
+	margin: 0 auto;
+	width: 600px;
+	font-family: "calibri";
+}
+table{
+	border-radius: 10px;
+	-webkit-border-radius: 10px;
+	-moz-border-radius: 10px;
+	border-collapse: collapse;
+}
+
+input{
+	width: 50px;
+}
+
+span{
+	padding:30px;
+}
+
+th, td {
+	padding: 15px;
+}
+
+tr:nth-child(odd) {background-color: #2d2d2d}
+tr:nth-child(even) {background-color: #3e3e3e}
+
+h1, h3, p, td, input{
+	text-align: center;
+}
